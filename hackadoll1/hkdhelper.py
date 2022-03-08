@@ -125,6 +125,11 @@ def get_seiyuu_channel(guilds):
     guild = disc_utils.get(guilds, id=CONFIG.SERVER_ID)
     return disc_utils.get(guild.channels, id=SEIYUU_CHANNEL_ID)
 
+def get_birthday_channel(guilds):
+    guild = disc_utils.get(guilds, id=CONFIG.SERVER_ID)
+    return disc_utils.get(guild.channels, id=BIRTHDAY_CHANNEL_ID)
+
+
 def get_muted_role(guild):
     return disc_utils.get(guild.roles, id=MUTED_ROLE_ID)
 
